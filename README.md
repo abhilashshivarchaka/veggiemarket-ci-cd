@@ -154,3 +154,9 @@ React Deployment Docs
 
 Docker Docs
 <img width="1024" height="1536" alt="veggie project" src="https://github.com/user-attachments/assets/1b479974-589b-444f-b6b2-342120bbe7a4" />
+
+<img width="1867" height="968" alt="front end" src="https://github.com/user-attachments/assets/d7230d80-d1d6-47d6-ab77-170c0b44afc1" />
+
+<img width="1867" height="968" alt="front end" src="https://github.com/user-attachments/assets/84728a91-1779-4a7b-bba4-4f2cf6203783" />
+
+
