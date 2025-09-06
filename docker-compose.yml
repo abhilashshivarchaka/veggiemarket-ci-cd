@@ -1,32 +1,28 @@
-version: '3.8'
-
+version: '3'
 services:
   frontend:
-    build:
-      context: ./website
-      dockerfile: Dockerfile
+    image: abhilash29/veggiemarket-frontend:latest
     ports:
-      - "3000:80"
+      - "80:80"
     depends_on:
       - backend
 
   backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
+    image: abhilash29/veggiemarket-backend:latest
     ports:
-      - "5001:5000"
+      - "5000:5000"
     environment:
-      MONGO_URI: mongodb://mongo:27018/veggiemarket
+      - MONGO_URL=mongodb://mongo:27017/veggiemarket
     depends_on:
       - mongo
 
   mongo:
-    image: mongo:latest
+    image: mongo:5
     ports:
-      - "27018:27017"
+      - "27017:27017"
     volumes:
-      - mongo-data:/data/db
+      - mongo_data:/data/db
 
 volumes:
-  mongo-data:
+  mongo_data:
+
